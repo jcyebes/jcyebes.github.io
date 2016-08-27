@@ -762,14 +762,9 @@
 
 
         /** Google Map Initialisation */
-/*
         if ($('#map').length > 0) {
             initialiseGoogleMap();
         }
-*/
-
-
-
 
         /** Window Scroll Top Button */
         var $btnScrollTop = $('.btn-scroll-top');

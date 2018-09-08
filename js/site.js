@@ -1099,15 +1099,15 @@
 		/** CUSTOM: words cloud */
 		var words = [
 			{text: "Swift", weight: 13},
-			{text: "Objective-C", weight: 9.4},
+			{text: "Objective-C", weight: 7},
 			{text: "Chopin", weight: 7.5},
-			{text: "Productivity", weight: 6},
+			{text: "RXSwift", weight: 9},
 			{text: "Time-management", weight: 6},
 			{text: "Clean", weight: 9},
-			{text: "Clojure", weight: 7},
+			{text: "Firebase", weight: 7},
 			{text: "Radiohead", weight: 7},
 			{text: "Realm", weight: 6.5},
-			{text: "Data Visualization", weight: 6.2},
+			{text: "Ableton Live", weight: 6.2},
 			{text: "Typhoon", weight: 5},
 		];
 		$('#inmindkeywords').jQCloud(words);

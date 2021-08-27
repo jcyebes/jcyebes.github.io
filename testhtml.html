@@ -1,0 +1,40 @@
+<html>
+<head><title>Santander One App - WebView Test</title></head>
+<body>
+    <h1>WebView Test</h1>
+    <p> <b>Basic Interceptors</b> </br>
+    <a href="app://close"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Close Interceptor</span></a>
+    </p>
+    <p>
+    <a href="app://pdf/https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test PDF Interceptor</span></a>
+    </p>
+    <p>
+    <a href="mailto:test@bancosantander.es"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Email Interceptor</span></a>
+    </p>
+    <p>
+    <a href="tel:+34915123123"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Phone Interceptor</span></a>
+    </p></br>
+    <p> <b>Country Interceptors</b> </br>
+    <a href="app://sms?message=SMS sent from Santander One"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test SMS Interceptor</span></a>
+    </p>
+    <p>
+    <a href="app://cardList"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Card List Interceptor</span></a>
+    </p>
+    <p>
+    <a href="app://cardHistory?vpan=12345"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Card History Interceptor</span></a>
+    </p>
+    <p>Click the button to open a new browser window.</p>
+    <p><button onclick=\"openWindow()\">Test window.open()</button></p>
+    <p><button onclick=\"closeWindow()\">Test window.close()</button></p>
+    <script type=\"text/javascript\">
+    function openWindow() {
+      window.open(\"https://www.w3schools.com\");
+      alert(\"window.open() triggered!\");
+    }
+    function closeWindow() {
+      window.close();
+      alert(\"window.close() triggered!\");
+    }
+    </script>
+</body>
+</html>

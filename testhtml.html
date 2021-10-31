@@ -34,144 +34,22 @@
       /* Center horizontally*/
       text-align: center;
     }
-    
-    /* Portrait and Landscape */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2) {
-    
+
+    body {
+          display: flex; 
+          flex-direction: column;
+          margin: 0;
+          min-height: 100vh;
     }
-    
-    /* Portrait */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait) {
-    }
-    
-    /* Landscape */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 480px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) {
-    
-    }
-    
-    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-    
-    /* Portrait and Landscape */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2) {
-    
-    }
-    
-    /* Portrait */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait) {
-    }
-    
-    /* Landscape */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) {
-    
-    }
-    
-    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-    
-    /* Portrait and Landscape */
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 667px) 
-      and (-webkit-min-device-pixel-ratio: 2) { 
-    
-    }
-    
-    /* Portrait */
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 667px) 
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait) { 
-    
-    }
-    
-    /* Landscape */
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 667px) 
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) { 
-    
-    }
-    
-    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-    
-    /* Portrait and Landscape */
-    @media only screen 
-      and (min-device-width: 414px) 
-      and (max-device-width: 736px) 
-      and (-webkit-min-device-pixel-ratio: 3) { 
-    
-    }
-    
-    /* Portrait */
-    @media only screen 
-      and (min-device-width: 414px) 
-      and (max-device-width: 736px) 
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait) { 
-    
-    }
-    
-    /* Landscape */
-    @media only screen 
-      and (min-device-width: 414px) 
-      and (max-device-width: 736px) 
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape) { 
-    
-    }
-    
-    /* ----------- iPhone X ----------- */
-    
-    /* Portrait and Landscape */
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 812px) 
-      and (-webkit-min-device-pixel-ratio: 3) { 
-    
-    }
-    
-    /* Portrait */
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 812px) 
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: portrait) { 
-    
-    }
-    
-    /* Landscape */
-    @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 812px) 
-      and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape) { 
-    
+        
+    main {
+          flex: 1;
     }
     </style>
-<head><title>Santander One App - WebView Test</title></head>
+<head><title>Santander One App - WebView Test</title>
+<meta name="viewport" content="width=device-width, height=device-height , 
+initial-scale=1.0,user-scalable=no, shrink-to-fit=yes" />
+</head>
 <body>
     <h1>WebView Test</h1>
     <div class="container1">

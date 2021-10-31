@@ -1,6 +1,39 @@
 <html>
     <style>
     /* ----------- iPhone 4 and 4S ----------- */
+    .container1 {
+          font-family: arial;
+          font-size: 24px;
+          margin: 25px;
+          width: 350px;
+          height: 350px;
+          outline: dashed 1px black;
+    }
+    
+    .container2 {
+          font-family: arial;
+          font-size: 24px;
+          margin: 25px;
+          width: 350px;
+          height: 600px;
+          outline: dashed 1px black;
+    }
+    
+    .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+        
+    p {
+      /* Center horizontally*/
+      text-align: center;
+    }
     
     /* Portrait and Landscape */
     @media only screen 
@@ -141,7 +174,9 @@
 <head><title>Santander One App - WebView Test</title></head>
 <body>
     <h1>WebView Test</h1>
-    <p> <h2>Basic Interceptors</h2> </br>
+    <div class="container1">
+    <h2>Basic Interceptors</h2> </br>
+    <p>
     <a href="app://close"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Close Interceptor</span></a>
     </p>
     <p>
@@ -153,7 +188,10 @@
     <p>
     <a href="tel:+34915123123"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Phone Interceptor</span></a>
     </p></br>
-    <p> <h2>Country Interceptors</h2> </br>
+    </div>
+    <div class="container2">
+    <h2>Country Interceptors</h2> </br>
+    <p>
     <a href="app://sms?message=SMS sent from Santander One"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test SMS Interceptor</span></a>
     </p>
     <p>
@@ -163,8 +201,9 @@
     <a href="app://cardHistory?vpan=12345"><span style=\"background-color: #ec0000; color: #fff; display: inline-block; padding: 10px 10px; font-weight: bold; border-radius: 5px;\">Test Card History Interceptor</span></a>
     </p>
     <p>Click the button to open a new browser window.</p>
-    <p><button onclick=\"openWindow()\">Test window.open()</button></p>
-    <p><button onclick=\"closeWindow()\">Test window.close()</button></p>
+    <p><button class="button" onclick=\"openWindow()\">Test window.open()</button></p>
+    <p><button class="button" onclick=\"closeWindow()\">Test window.close()</button></p>
+    </div>
     <script type=\"text/javascript\">
     function openWindow() {
       window.open(\"https://www.w3schools.com\");
